@@ -25,7 +25,7 @@ namespace Refactoring
                 new DateParser("abcd").parse();
                 Assert.Fail("Should have failed since the year string is not an integer");
             } catch (Exception e) {
-                Assert.AreEqual("Year is an integer", e.Message);
+                Assert.AreEqual("Year is not an integer", e.Message);
             }
         }
     
