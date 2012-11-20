@@ -33,7 +33,7 @@ namespace Refactoring
         public void shouldThrowExceptionIfYearIsLessThan2000()
         {
             try {
-                new DateParser("2001").parse();
+                new DateParser("1990").parse();
                 Assert.Fail("Should have failed since the year is less than 2000");
             } catch (Exception e) {
                 Assert.AreEqual("Year cannot be less than 2000 or more than 2012", e.Message);
