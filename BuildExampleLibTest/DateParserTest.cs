@@ -14,7 +14,7 @@ namespace Refactoring
                 new DateParser("111").parse();
                 Assert.Fail("Should have failed since the year string is less than 4 characters");
             } catch (Exception e) {
-                Assert.AreEqual(" string is less than 4 characters", e.Message);
+                Assert.AreEqual("Year string is less than 4 characters", e.Message);
             }
         }
     
@@ -25,7 +25,7 @@ namespace Refactoring
                 new DateParser("abcd").parse();
                 Assert.Fail("Should have failed since the year string is not an integer");
             } catch (Exception e) {
-                Assert.AreEqual("Year is not an integer", e.Message);
+                Assert.AreEqual("Year is an integer", e.Message);
             }
         }
     
