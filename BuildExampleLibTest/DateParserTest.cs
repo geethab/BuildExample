@@ -14,7 +14,7 @@ namespace Refactoring
                 new DateParser("111").parse();
                 Assert.Fail("Should have failed since the year string is less than 4 characters");
             } catch (Exception e) {
-                Assert.AreEqual(" string is less than 4 characters", e.Message);
+                Assert.AreEqual("Year string is less than 4 characters", e.Message);
             }
         }
     

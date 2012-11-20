@@ -2,7 +2,7 @@ properties {
 $base_dir = Resolve-Path .
 $build_dir = "$base_dir\psake-build"
 $sln_file = "$base_dir\BuildExample.sln"
-$nunit_path = "C:\Users\Admin\Downloads\NUnit-2.6.2\NUnit-2.6.2\bin\nunit-console.exe"
+$nunit_path = "$base_dir\packages\NUnit-2.6.2 Executable\bin\nunit-console.exe"
 $test_asm_name = "$build_dir\BuildExampleLibTest.dll"
 }
 
