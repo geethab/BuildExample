@@ -1,5 +1,4 @@
-﻿<?xml version="1.0"?>
-<project name="build-example" default="build" basedir=".">
+﻿<project name="build-example" default="build" basedir=".">
 		
 	<target name="clean" description="remove all generated files">
 		<delete dir="nant-output" failonerror="false" />
